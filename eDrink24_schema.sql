@@ -141,7 +141,7 @@ CREATE TABLE BASKETITEM (
 CREATE TABLE PRODUCTIMAGE (
     `productImageId` INT NOT NULL AUTO_INCREMENT,
     `productId` INT NOT NULL,
-    `detailImage` VARCHAR(255) NOT NULL,
+    `detailImage` VARCHAR(255) NULL,
     PRIMARY KEY (`productImageId`),
     FOREIGN KEY (`productId`) REFERENCES `Product`(`productId`)
 );
